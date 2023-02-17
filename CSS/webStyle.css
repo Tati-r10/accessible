@@ -1,0 +1,20 @@
+/*------------------------------ Style for the whole page ------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom,#e2dde7,#ffffe6, #79767e); 
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+	color: white;
+}
+
+.container{
+    width: 100%;
+    border: 1px solid black;
+    margin:  0 auto 30px auto;
+    padding: 30px;
+}
