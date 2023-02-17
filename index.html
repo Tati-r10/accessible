@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--It is important to make our website responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Website</title>
+    <!--Links for CSS files-->
+    <link rel="stylesheet" href="CSS/webStyle.css">
+    <link rel="stylesheet" href="CSS/navbarStyle.css">
+    <link rel="stylesheet" href="CSS/webStyle.css">
+    <link rel="stylesheet" href="CSS/categoriesStyle.css">
+    <link rel="stylesheet" href="CSS/searchStyle.css">
+</head>
+
+<body>
+
+    <!--Navbar section starts here-->
+    <header class="container">
+        <div class="logo"><img src="images/logo.png" alt="COMPANY'S LOGO"></div>
+
+        <nav class="navbar" role="menu">
+            <ul class="menu">
+                <li><a role="menuitem" class="active" href="index.html">Home</a></li>
+                <li><a role="menuitem" href="#products">Products</a></li>
+                <li><a role="menuitem" href="#about">About us</a></li>
+                <li><a role="menuitem" href="#contact">Contact</a></li>			
+            </ul>
+            
+            <ul class="loginMenu">
+                <li><a href="logIn.html">Log In</a></li>
+                <li><a id="cart" href="cart.html"><img id="imgCart" src="images/shopping_cart.png" alt="Shopping Cart"/></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--Navbar section ends here-->
+
+    <!--Search section starts here-->
+    <section class="search">
+        <div class="container">
+            <h2>Search</h2>
+
+            <form action="">
+                <input type="text" stakeholder="Search for a product...">
+                <input type="submit" name="submit" value="Search">
+            </form>
+        </div>
+
+    </section>
+    <!--Search section ends here-->
+
+    <!--Products categories starts here-->
+    <section class="categories" id="products">
+        <div class="container">
+            <h2>Product's Categories</h2>
+
+            <div class="boxCategory">
+                <h3>Category 1</h3>
+            </div>
+
+            <div class="boxCategory">
+                <h3>Category 2</h3>
+            </div>
+
+            <div class="boxCategory">
+                <h3>Category 3</h3>
+            </div>
+        </div>
+    </section>
+    <!--Main section ends here-->
+
+    <!--Contact section starts here-->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About us</h2>
+            <div class="formBox">
+                <form action="https://formsubmit.co/dai18264@uom.edu.gr" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="message" placeholder="Message" required>
+                    <input type="hidden" name="_next" value="https://thankYou.html">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            
+        </div>
+
+    </section>
+    <!--Contact section ends here-->
+
+    <!--Footer section starts here-->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <h1>Footer</h1>
+
+            <ul class="contactInfo">
+                <li role="listitem" name="telephone">Tel:</li>
+                <li>Email:</li>
+                <li><a role="" href="">Facebook</a></li>
+                <li><a role="" href="">Instagram</a></li>		
+            </ul>
+        </div>
+    </footer>
+    <!--Footer section ends here-->
+    
+</body>
+</html>
