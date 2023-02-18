@@ -1,13 +1,20 @@
-/*Style for the product's category boxes*/
+/*Style for the product's category section*/
 
 .categories .container{
-    display: flex;
+    display: block;
     color: #5D4954;
     align-items: center;
+    margin-top: 140px;
+}
+
+.categories .container .boxes{
+    display: flex;
+    justify-content: center;
 }
 
 .categories h2{
     text-align: center;
+    justify-content: center;
 }
 
 .categories div{
@@ -22,5 +29,5 @@
     height: 200px;
     margin: 10px 50px;
     align-items: center;
-    vertical-align: middle;
+    
 }
