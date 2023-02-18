@@ -2,13 +2,13 @@
 
 header{
 	max-height: 80px;
-	background-color: #2e545f;
+	background-color: rgb(46, 84, 95);
 	display: flex;
     justify-content: space-between;
 	align-items: center;
     position: fixed;
     top: 0;
-    margin-top: 0px ;
+    margin-top: 0 ;
     padding-top: 0;
 }
 
@@ -19,23 +19,24 @@ header{
 	font-size: 25px;
 	font-weight: bold;
     width: fit-content;
-    height: fit-content;
+    height: 75px;
+    border:1px solid black;
 }
 
 /*---------------------------------- Style for the navbar ----------------------------------*/
 
-.navbar{
+#navbar{
     display: flex;
     justify-content: space-between;
 }
 
-.navbar ul {
+#navbar ul {
     display: flex;
     list-style: none;
     margin-left: 100px;
 }
 
-.navbar ul li a{
+#navbar ul li a{
 	color: rgb(226,226,226);
     font-size: 18px;
     padding: 10px;
@@ -48,13 +49,13 @@ header{
     display: block;
 }
 
-.navbar ul li a:hover{
+#navbar ul li a:hover{
     color:#5D4954;
     background-color: rgb(226,226,226) ;
     text-decoration: underline;
 }
 
-.navbar ul li a.active{
+#navbar ul li a.active{
     color:#5D4954;
     background-color: rgb(226,226,226);
 
