@@ -1,0 +1,154 @@
+/*------------------------------ General style for the header ------------------------------*/
+
+header{
+    background-color: #181d31; 
+	height: 100px;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+    position: fixed;
+    top: 0;
+    margin-top: 0 ;
+    padding-top: 0;
+}
+
+/*----------------------------------- Style for the logo -----------------------------------*/
+
+.logo{
+	color: #BFA181;
+	font-size: 25px;
+	font-weight: bold;
+    width: fit-content;
+    height: 95px;
+}
+
+/*---------------------------------- Style for the navbar ----------------------------------*/
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: 100px;
+}
+
+#navbar ul li a{
+	color: #BFA181;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    width: 100px;
+    margin: 0px 5px;
+    text-align: center;
+    transition: 0.8s;
+    border-radius: 50px;
+    display: block;
+}
+
+#navbar ul li a:hover{
+    color:#181D31;
+    font-weight: bold;
+    background-color: #C3C0C0;
+    text-decoration: underline;
+}
+
+#navbar ul li a.active{
+    color:#181D31;
+    font-weight: bold;
+    background-color: #C3C0C0;
+}
+
+#imgCart{
+    width: 20px;
+    height: 20px;
+}
+
+#cart.active #imgCart{
+    /*It makes the cart's color to seems like #5D4954 */
+    content: url("../images/shopping_cart_blue.png") ;
+}
+#cart:hover #imgCart {
+    /*It makes the cart's color to seems like #5D4954 */
+    content: url("../images/shopping_cart_blue.png") ;
+}
+
+/*The invisible menu icon for responsive bar*/
+.menuBtn{
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    height: 41px;
+    margin: 0px 5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+    border-radius: 50px;
+}
+
+.menuBtn .bar{
+    width: 50%;
+    height: 3px;
+    margin: 3px 5px ;
+    background-color: #BFA181;
+    border-radius: 10px;
+}
+
+.menuBtn:hover{
+    background-color: #C3C0C0;
+}
+
+.menuBtn:hover .bar{
+    background-color: #181D31;
+}
+
+
+/*It makes the navigation bar responsive to screen's width*/
+@media (max-width: 1200px){
+    
+    #navbar ul{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 900px){
+    .menuBtn{
+        display: flex;
+    }
+
+    header.container{
+        flex-direction: column;
+        align-items: flex-start; 
+        padding-top: 0;  
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #181D31;
+        padding-top: 90px;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    #navbar ul li{
+        margin: 5px ;
+    }
+
+    #navbar.active{
+        display: flex;
+    }
+
+    .menuBtn{
+        margin-top: 30px;
+    }
+}

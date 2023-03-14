@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--It is important to make our website responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Website</title>
+
+    <!--Links for CSS files-->
+    <link rel="stylesheet" href="CSS/webStyle.css">
+    <link rel="stylesheet" href="CSS/navbarStyle.css">
+    <link rel="stylesheet" href="CSS/webStyle.css">
+    <link rel="stylesheet" href="CSS/categoriesStyle.css">
+    <link rel="stylesheet" href="CSS/searchStyle.css">
+    <link rel="stylesheet" href="CSS/aboutStyle.css">
+
+</head>
+
+<body>
+
+    <!--Navbar section starts here-->
+    <header class="container">
+        <div class="logo"><img class="responsiveImg" src="images/logo.png" alt="COMPANY'S LOGO"></div>
+        
+        <!--The invisible menu icon for responsive bar-->
+        <a class="menuBtn section" href="#" onclick="visibleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+                    
+        <nav id="navbar" role="menu">
+            <ul class="menu">
+                <li><a role="menuitem" class="section active" href="index.html" onclick="activeSection(0)">Home</a></li>
+                <li><a role="menuitem" class="section" href="#products" onclick="activeSection(1)">Products</a></li>
+                <li><a role="menuitem" class="section" href="#about" onclick="activeSection(2)">About us</a></li>
+                <li><a role="menuitem" class="section" href="#contact" onclick="activeSection(3)">Contact</a></li>			
+            </ul>
+            
+            <ul class="loginMenu">
+                <li><a class="section" href="logIn.html" onclick="activeSection(4)">Log In</a></li>
+                <li><a class="section responsiveImg" id="cart" href="#contact" onclick="activeSection(5)"><img id="imgCart" src="images/shopping_cart_gold.png" alt="Shopping Cart"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hr"></div> 
+    <!--Navbar section ends here-->
+
+    <!--Search section starts here-->
+    <section class="search">
+        <div class="container">
+                <form action="" method="">
+                    <!--<label for="searchBox" name="searchBox">Search</label>-->
+                    <input id= "searchBox" type="text" placeholder="Search for a product..." required>
+                    <input id= "searchBtn"type="submit" name="submit" value="Search">
+                </form>
+        </div>
+    </section>
+    <!--Search section ends here-->
+
+    <!--Products categories starts here-->
+    <section class="categories" id="products">
+        <div class="container">
+            <h1>Categories</h1>
+            <br>
+
+            <div class="boxes">
+                <div class="boxCategory">
+                    <h2>Category 1</h2>
+                    <img class= "categoryIcon responsiveImg" src="images\product.png" alt="Category product">
+                </div>
+    
+                <div class="boxCategory">
+                    <h2>Category 2</h2>
+                    <img class= "categoryIcon responsiveImg" src="images\product.png" alt="Category product">
+                </div>
+    
+                <div class="boxCategory">
+                    <h2>Category 3</h2>
+                    <img class= "categoryIcon responsiveImg" src="images\product.png" alt="Category product">
+            </div>
+        </div>
+    </section>
+    <!--Main section ends here-->
+
+    <!--Contact section starts here-->
+    <section class="about" id="about">
+        <div class="container">
+            <h1>About us</h1>
+
+            <div class="contactBox">
+
+                <ul class="contactInfo">
+                    <li role="listitem" name="telephone">Address:</li>
+                    <li role="listitem" name="telephone">Telephone:</li>
+                    <li>Email:</li>
+                    <li><a role="" href="">Facebook</a></li>
+                    <li><a role="" href="">Instagram</a></li>		
+                </ul>
+                <div class="formBox">
+                    <form action="https://formsubmit.co/dai18264@uom.edu.gr" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <br>
+                        <label for="message">Message</label>
+                        <input type="text" name="message" placeholder="Message" required>
+                        <br>
+                        <input type="hidden" name="_next" value="thankYou.html">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+             </div> 
+
+        </div>
+
+    </section>
+    <!--Contact section ends here-->
+
+    <!--Footer section starts here-->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p>All rights reserved.</p>
+
+           
+        </div>
+    </footer>
+    <!--Footer section ends here-->
+
+    
+    <!--Links for JAVASCRIPT files-->
+    <script src="../website/JAVASCRIPT/navbar.js"></script>
+</body>
+</html>

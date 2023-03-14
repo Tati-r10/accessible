@@ -1,0 +1,32 @@
+.about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactInfo a{
+    color: #BFA181;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contactInfo{
+    margin: 20px;
+    list-style: none;
+}
+
+.contactInfo li{
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #BFA181;
+}
+
+.formBox form{
+    width: 400px;
+    height: 500px;
+    border: 2px solid white;
+    margin: 20px;
+    
+}
